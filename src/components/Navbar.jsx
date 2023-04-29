@@ -5,6 +5,7 @@ import { RiMoonFill } from "react-icons/ri";
 import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
+import Head from "next/head";
 
 const navItems = [
   {
@@ -27,6 +28,11 @@ export const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
+<>
+    <Head>
+      <title>Dobre Florentina Portfolio</title>
+    </Head>
+
     <header className="w-full mx-auto px-4 shadow fixed sm:px-20 top-0 z-50 bg-white text-black dark:border-b dark:border-stone-600">
       <section className="justify-between md:flex md:items-center">
         <article className="flex items-center justify-between py-3">
@@ -57,14 +63,9 @@ export const Navbar = () => {
                 return (
                   <Link
                     key={id}
-                    activeClass='active'
-                    spy={true}
-                    offset={-100}
                     href={""}
                     to={item.page}
                     className={"block lg:inline-block text-neutral-900 hover:text-neutral-500"}
-                    smooth={true}
-                    duration={500}
                     onClick={() => setNavbar(!navbar)}
                   >
                     {item.label}
@@ -93,5 +94,6 @@ export const Navbar = () => {
         </article>
       </section>
     </header>
+    </>
   );
 };
