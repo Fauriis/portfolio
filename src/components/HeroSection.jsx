@@ -23,9 +23,9 @@ export const HeroSection = () => {
           </p>
 
           <Link
-            to="projects"
+            
             className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded-md hover:bg-teal-700"
-            href={""}
+            href={"#projects"}
           >
             {" "}
             Projects
@@ -34,7 +34,7 @@ export const HeroSection = () => {
       </div>
 
       <div className="flex flex-row justify-center">
-        <Link to='about' className="" href={''}>
+        <Link href='#about'>
             <HiArrowDown size={35} className="animate-bounce"></HiArrowDown>
         </Link>
       </div>

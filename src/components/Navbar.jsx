@@ -59,10 +59,10 @@ export const Navbar = () => {
             }`}
           >
             <div className="items-center justify-center space-y-4 md:flex md:space-x-6 md:space-y-0">
-              {navItems.map((item, id) => {
+              {navItems.map((item, i) => {
                 return (
                   <Link
-                    key={id}
+                    key={i}
                     href={""}
                     to={item.page}
                     className={"block lg:inline-block text-neutral-900 hover:text-neutral-500"}
