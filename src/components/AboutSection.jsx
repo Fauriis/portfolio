@@ -28,9 +28,9 @@ export const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-              Hi, my name is Florentina and I am a
+              Hi, my name is Florentina and I am a {""}
               <span className="font-bold">
-                highly ambitious, self-motivated, driven and artistic
+                highly ambitious, self-motivated and driven
               </span>{" "}
               frontend developer based in Bucharest, Romania.
             </p>
