@@ -7,7 +7,7 @@ const projects = [
   {
     name: "Ecommerce Products",
     description:
-      "An ecommerce site created and designed by me, using API store.",
+      "An ecommerce site created and designed by me, using Fake Store API.",
     image: "/ecommerce.png",
     link: "https://ecommerce-products-eight.vercel.app",
     github: "https://github.com/Fauriis/ecommerce-products",
@@ -23,14 +23,14 @@ const projects = [
   {
     name: "Ecommerce Products",
     description:
-      "An ecommerce site created in the Pixellab course, using Fake Store API",
+      "An ecommerce site created in the Pixellab course, using Fake Store API.",
     image: "/ecommerce2.png",
     link: "https://df-sidney-ecom-f8nk.vercel.app",
     github: "https://github.com/Fauriis/df-sidney-ecom",
   },
   {
     name: "Digital Clock",
-    description: "A digital clock having particles as background.",
+    description: "A digital clock with particles as background.",
     image: "/digitalclock.png",
     link: "https://digital-clock-fawn.vercel.app",
     github: "https://github.com/Fauriis/digital-clock",
@@ -48,17 +48,17 @@ export const ProjectsSection = () => {
       <div className="flex flex-col space-y-28">
         {projects.map((project, i) => {
           return (
-            <div key={i}>
+            <section key={i}>
               <div className="flex flex-col md:flex-row md:space-x-12">
                 <div className="mt-8 md:w-1/2">
-                    <Link href={project.link} target="_blank">
-                  <Image
-                    src={project.image}
-                    alt=""
-                    width={1000}
-                    height={1000}
-                    className="rounded-xl shadow-xl hover:opacity-70"
-                  ></Image>
+                  <Link href={project.link} target="_blank">
+                    <Image
+                      src={project.image}
+                      alt=""
+                      width={1000}
+                      height={1000}
+                      className="rounded-xl shadow-xl hover:opacity-70"
+                    ></Image>
                   </Link>
                 </div>
                 <div className="mt-12 md:w-1/2">
@@ -82,7 +82,7 @@ export const ProjectsSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
           );
         })}
       </div>
