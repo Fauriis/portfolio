@@ -24,7 +24,7 @@ export const HeroSection = () => {
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I am a{" "}
             <span className="font-semibold text-teal-600">
-              Beginner Frontend Developer with React
+              Beginner Frontend Developer in React
             </span>{" "}
             based in Bucharest, Romania. Working towards creating web designs
             that make life easier and meaningful.
