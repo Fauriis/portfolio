@@ -10,7 +10,7 @@ export const HeroSection = () => {
         <div className="md:w-1/2 md:mt-2">
           <Image
             className="rounded-full shadow-2xl"
-            src="/avatar.jpeg"
+            src="/avatar1.png"
             alt=""
             width={300}
             height={300}
@@ -24,7 +24,7 @@ export const HeroSection = () => {
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I am a{" "}
             <span className="font-semibold text-teal-600">
-              Beginner Frontend Developer in React
+              Junior Frontend Developer in React
             </span>{" "}
             based in Bucharest, Romania. Working towards creating web designs
             that make life easier and meaningful.
